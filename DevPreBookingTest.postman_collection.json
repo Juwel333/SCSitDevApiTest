@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "c714f2aa-bfb6-410c-9f51-5442683821e2",
+		"name": "DevPreBookingTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26316244"
+	},
+	"item": [
+		{
+			"name": "getPreBooking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2lsZXJwbGF0ZS5jb20iLCJkYXRhIjp7InVzZXJOYW1lIjoiamFoaWRfcWFfZGlsX3AiLCJkZXZpY2VVdWlkIjoiMThDMDREOUREODNCIiwidXNlclVpZCI6ImphaGlkX3FhX2RpbF9wIiwibmFtZSI6IkphaGlkICIsImNvbXBhbnlOYW1lIjoiIiwidXNlclR5cGUiOiJPUEVSQVRPUiIsInVzZXJSb2xlIjoiT1BFUkFUT1IiLCJsb2dpblR5cGUiOiJVU0VSTkFNRSIsImRlcGFydG1lbnRDb2RlIjoiNzAiLCJicmFuY2hDb2RlIjoiRElMIiwiYnJhbmNoU0wiOiIwMDUiLCJkZXZpY2VQZXJtaXNzaW9uIjoiMTgxQzAxNEQxOUQxRDgxM0IxRGUxZmExdWwxdCAxc3QxcmkxbmcxQVAxUFIxT1YxRUQxIn0sImlhdCI6MTY3OTIyNTEyMiwiZXhwIjoxNjg3MDAxMTIyfQ.cnUt5KV_t1dpN0MYc25eJO_CNp-2EzpJR8Z-vRFJKIkgQJop3P_r6x0qvNR-S7ANJWRb0qcMYy5qB6b1KlMNZM4sgsDhmJ-n7VccNVQuVC5h8CuChIXADCLct3XuVehkN4RhwxFNEczVRucO9Db6HEy6k8tc33dpiFS3S-adyf72jWPQMvRin5soH03wObIG1_Pj9Qw0MAQfdEO7vG2sNiCE1Lx6gY-ONQgiiXMZ39JHAes6Kmw3MiZ4UntQE4Wd-BXy7yAiqBdc_DrGkt8TTvS09hG_SvOXCJYSonZvr8naVyB3JC_AVt-Iv1ZlgZTD0gP53kjqvgIceKWzGxcAvAl7_3cuGaHdTzV7e5OMeWC3SQm14GXnKuXCMBE8XVut8WPfB_XkXYmTPBeZhKMAQAY2y3oUPamy54Sg9TiZhvg7I8oCi2GxQYlel_r-as535m_9xxYQOBPOHbRMJ1aO9TIwz9yvXVII9_jUUkLsNLA_OBZtCLaR7QevJaX3jTqPXAwyM34q5HgC4_8OR6JA9qc6dYLzCBWG032O21G_yoFJN0GBP9DdVrDc9ok_yLgXTWh8k8z2RY_iA6IFBWkzPpjwr3HNr1-xQysAOs7MhQYOks7jNShvzVR-hzSchhVdy1YHb9V3JKWPBJP4_q7mXZOwEqCNGVuky_o6oBXnSrw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "\r\nquery Query($preBookingSerialNo: String!) {\r\n  getPreBooking(PreBookingSerialNo: $preBookingSerialNo) {\r\n    message\r\n    result {\r\n      bookedBy {\r\n        at\r\n        userName\r\n      }\r\n      bookingBranch {\r\n        code\r\n        name\r\n        uid\r\n        vdBranchCode\r\n        vdBranchName\r\n      }\r\n      bookingDate\r\n      deletedBy {\r\n        at\r\n        userName\r\n      }\r\n      destinationBranch {\r\n        code\r\n        name\r\n        nameBn\r\n        uid\r\n        vdBranchCode\r\n        vdBranchName\r\n      }\r\n      isHomeDelivery\r\n      item {\r\n        description\r\n        name\r\n        quantity\r\n        unit\r\n      }\r\n      lot {\r\n        from\r\n        quantity\r\n        to\r\n      }\r\n      party {\r\n        uid\r\n        code\r\n        meta {\r\n          companyName\r\n          firstName\r\n          lastName\r\n        }\r\n      }\r\n      partyInvoiceNumber\r\n      preBookingDate\r\n      preBookingSerialNo\r\n      price {\r\n        actualRate\r\n        actualReceiveableAmount\r\n        conditionAmount\r\n        discount\r\n        isPaid\r\n        otherCharge\r\n        rate\r\n        serviceCharge\r\n        status\r\n        totalDiscount\r\n        totalReceiveableAmount\r\n        vat\r\n        vatAmount\r\n      }\r\n      receiver {\r\n        address\r\n        contact {\r\n          countryCode\r\n          email\r\n          phone\r\n        }\r\n        meta {\r\n          firstName\r\n          lastName\r\n        }\r\n        nid\r\n      }\r\n      sender {\r\n        address\r\n        contact {\r\n          countryCode\r\n          email\r\n          phone\r\n        }\r\n        meta {\r\n          firstName\r\n          lastName\r\n        }\r\n        nid\r\n      }\r\n      status\r\n      updatedBy {\r\n        at\r\n        userName\r\n      }\r\n      number\r\n    }\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"preBookingSerialNo\": \"90022000000002\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "https://api-gateway.sundarbanit.com.bd/graphql",
+					"protocol": "https",
+					"host": [
+						"api-gateway",
+						"sundarbanit",
+						"com",
+						"bd"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

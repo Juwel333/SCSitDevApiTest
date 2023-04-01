@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "68dfe607-66cf-44db-aaf0-c4e8ee2765f9",
+		"name": "DevLoginApiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26316244"
+	},
+	"item": [
+		{
+			"name": "accessTokenApi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation CreateAccessToken($accessTokenFilter: AccessTokenInput!) {\r\n  createAccessToken(accessTokenFilter: $accessTokenFilter) {\r\n    message\r\n    result {\r\n      otpCounter\r\n      phone\r\n    }\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"accessTokenFilter\": {\r\n    \"device\": {\r\n      \"deviceType\": \"WEB\",\r\n      \"macAddress\": \"18C04D9DD83B\",\r\n      \"motherboardSerialNumber\": \"Default string\",\r\n      \"computerName\": \"UTT6-12795\"\r\n    },\r\n    \"userName\": \"jahid_qa_dil_p\"\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "https://api-gateway.sundarbanit.com.bd/graphql",
+					"protocol": "https",
+					"host": [
+						"api-gateway",
+						"sundarbanit",
+						"com",
+						"bd"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginOperatorApiTest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation Mutation($auth: AuthInput!, $device: DeviceInput!, $password: String!) {\r\n  loginOperator(auth: $auth, device: $device, password: $password) {\r\n    message\r\n    result {\r\n      expiresAt\r\n      refreshToken\r\n      token\r\n    }\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{  \"auth\": {\r\n    \"deviceUuid\": \"18C04D9DD83B\",\r\n    \"otp\": \"635989\",\r\n    \"userName\": \"jahid_qa_dil_p\"\r\n  },\r\n  \"device\":{\r\n      \"deviceType\": \"WEB\",\r\n      \"macAddress\": \"18C04D9DD83B\",\r\n      \"motherboardSerialNumber\": \"Default string\",\r\n      \"computerName\": \"UTT6-12795\"\r\n    },\r\n  \"password\": \"NewPCM!@#\"\r\n}"
+					}
+				},
+				"url": {
+					"raw": "https://api-gateway.sundarbanit.com.bd/graphql",
+					"protocol": "https",
+					"host": [
+						"api-gateway",
+						"sundarbanit",
+						"com",
+						"bd"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
