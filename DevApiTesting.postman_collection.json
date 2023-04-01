@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "3a0235d9-8b4d-409a-8b5a-45ec35ea75ae",
+		"name": "DevApiTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26316244"
+	},
+	"item": [
+		{
+			"name": "sendSmsGP{{url}}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "fjhdjkdfhgkjdghdkjghdkjghdkjghdkjghjd",
+						"type": "text"
+					},
+					{
+						"key": "appSecret",
+						"value": "jsdhsfhskdffasgsjdajhsdgajhdgajhdg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation SendSMSForSSL($smslg: SendSMSInput!) {\r\n  sendSMSForSSL(smslg: $smslg) {\r\n    message\r\n    result\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"smslg\": {\r\n    \"requestFrom\": {\r\n      \"appName\": \"PCM\"\r\n    },\r\n    \"sms\": {\r\n      \"phoneNumber\": \"01722530479\",\r\n      \"smsText\": \"This is the testing text\"\r\n    },\r\n    \"uid\": \"A1\"\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendSmsBL{{url}}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "fjhdjkdfhgkjdghdkjghdkjghdkjghdkjghjd",
+						"type": "text"
+					},
+					{
+						"key": "appSecret",
+						"value": "jsdhsfhskdffasgsjdajhsdgajhdgajhdg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation SendSMSForBl($smslg: SendSMSInput!) {\r\n  sendSMSForBl(smslg: $smslg) {\r\n    message\r\n    result\r\n    statusCode\r\n  }\r\n}\r\n",
+						"variables": "{\r\n  \"smslg\": {\r\n    \"requestFrom\": {\r\n      \"appName\": \"PCM\"\r\n    },\r\n    \"sms\": {\r\n      \"phoneNumber\": \"01915864609\",\r\n      \"smsText\": \"Hello world\"\r\n    },\r\n    \"uid\": \"A2\"\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendSmsRobi{{url}}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "fjhdjkdfhgkjdghdkjghdkjghdkjghdkjghjd",
+						"type": "text"
+					},
+					{
+						"key": "appSecret",
+						"value": "jsdhsfhskdffasgsjdajhsdgajhdgajhdg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation SendSMSForBl($smslg: SendSMSInput!) {\r\n  sendSMSForRobi(smslg: $smslg) {\r\n    message\r\n    result\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"smslg\": {\r\n    \"requestFrom\": {\r\n      \"appName\": \"PCM\"\r\n    },\r\n    \"sms\": {\r\n      \"phoneNumber\": \"01842509684\",\r\n      \"smsText\": \"Test text\"\r\n    },\r\n    \"uid\": \"A3\"\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendSmsSSL{{url}}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "fjhdjkdfhgkjdghdkjghdkjghdkjghdkjghjd",
+						"type": "text"
+					},
+					{
+						"key": "appSecret",
+						"value": "jsdhsfhskdffasgsjdajhsdgajhdgajhdg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation SendSMSForSSL($smslg: SendSMSInput!) {\r\n  sendSMSForSSL(smslg: $smslg) {\r\n    message\r\n    result\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"smslg\": {\r\n    \"requestFrom\": {\r\n      \"appName\": \"PCM\"\r\n    },\r\n    \"sms\": {\r\n      \"phoneNumber\": \"01722530479\",\r\n      \"smsText\": \"SCSit testing text\"\r\n    },\r\n    \"uid\": \"A4\"\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendSmsDecisionLayer{{url}}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "fjhdjkdfhgkjdghdkjghdkjghdkjghdkjghjd",
+						"type": "text"
+					},
+					{
+						"key": "appSecret",
+						"value": "jsdhsfhskdffasgsjdajhsdgajhdgajhdg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation DecisionLayer($smslg: DecisionLayerInput!) {\r\n  decisionLayer(smslg: $smslg) {\r\n    message\r\n    result\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"smslg\": {\r\n    \"carrier\": \"BANGLALINK\",\r\n    \"requestFrom\": {\r\n      \"appName\": \"PCM\"\r\n    },\r\n    \"sms\": {\r\n      \"phoneNumber\": \"01915864609\",\r\n      \"smsText\": \"Testing\"\r\n    }\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendSmsVtech{{url}}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "fjhdjkdfhgkjdghdkjghdkjghdkjghdkjghjd",
+						"type": "text"
+					},
+					{
+						"key": "appSecret",
+						"value": "jsdhsfhskdffasgsjdajhsdgajhdgajhdg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation DecisionLayer($smslg: SendSMSInput!) {\r\n  sendSMSForVtech(smslg: $smslg) {\r\n    result\r\n    statusCode\r\n    message\r\n  }\r\n}",
+						"variables": "{\r\n  \"smslg\": {\r\n    \"requestFrom\": {\r\n      \"appName\": \"PCM\"\r\n    },\r\n    \"sms\": {\r\n      \"phoneNumber\": \"01722530479\",\r\n      \"smsText\": \"Welcome to SCSit\"\r\n    },\r\n    \"uid\": \"A8\"\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookedBy\": {\r\n        \"operator\": {\r\n            \"userName\": \"jahid_qa_dil_p\"\r\n        },\r\n        \"at\": \"2023-03-14T18:41:45.000Z\"\r\n    },\r\n    \"bookingBranch\": {\r\n        \"name\": \"Dilkusha\",\r\n        \"code\": \"DIL\"\r\n    },\r\n    \"cnType\": {\r\n        \"code\": \"PSL\"\r\n    },\r\n    \"department\": {\r\n        \"name\": \"Parcel\"\r\n    },\r\n    \"destinationBranch\": {\r\n        \"code\": \"KBZ\",\r\n        \"nameBn\": \"ঢাকা কাওরানবাজার\",\r\n        \"name\": \"Kawran Bazar,Dhaka\"\r\n    },\r\n    \"destinationMainBranch\": {\r\n        \"name\": \"Kawran Bazar,Dhaka\",\r\n        \"code\": \"KBZ\"\r\n    },\r\n    \"isHomeDelivery\": false,\r\n    \"item\": {\r\n        \"name\": \"E-Com-Dhaka\",\r\n        \"unit\": \"Pcs\",\r\n        \"quantity\": 1,\r\n        \"description\": \"E-COM DHAKA TO DHAKA\"\r\n    },\r\n    \"lot\": {\r\n        \"quantity\": 1,\r\n        \"from\": \"70005002343489\",\r\n        \"to\": \"70005002343489\"\r\n    },\r\n    \"number\": \"70005002343489\",\r\n    \"packetSerial\": \"3100229819\",\r\n    \"price\": {\r\n        \"totalDiscount\": 20,\r\n        \"totalReceiveableAmount\": 70,\r\n        \"isPaid\": true,\r\n        \"conditionAmount\": 19000,\r\n        \"vdCharge\": 170,\r\n        \"totalCharge\": 90\r\n    },\r\n    \"printBy\": {\r\n        \"operator\": {\r\n            \"userName\": \"jahid_qa_dil_p\"\r\n        }\r\n    },\r\n    \"receiver\": {\r\n        \"meta\": {\r\n            \"firstName\": \"GHSDA\"\r\n        },\r\n        \"address\": \"KAWRAN BAZAR,DHAKA\",\r\n        \"contact\": {\r\n            \"phone\": \"01965488885\"\r\n        }\r\n    },\r\n    \"reference\": \"\",\r\n    \"printData\": {\r\n        \"count\": 0,\r\n        \"message\": \"Re-Print 0\"\r\n    },\r\n    \"sender\": {\r\n        \"meta\": {\r\n            \"firstName\": \"FHRF\"\r\n        },\r\n        \"address\": \"DILKUSHA\",\r\n        \"contact\": {\r\n            \"phone\": \"01856954554\"\r\n        },\r\n        \"nid\": \"85465825856\"\r\n    },\r\n    \"serviceType\": {\r\n        \"code\": \"E-Com-Dhaka\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9999/sticker",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"sticker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DevpostApiTest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{bookedBy: {operator: {userName: \"jahid_qa_dil_p\"}, at: \"2023-03-18T14:06:51.000Z\"},…}\r\nbookedBy\r\n: \r\n{operator: {userName: \"jahid_qa_dil_p\"}, at: \"2023-03-18T14:06:51.000Z\"}\r\nat\r\n: \r\n\"2023-03-18T14:06:51.000Z\"\r\noperator\r\n: \r\n{userName: \"jahid_qa_dil_p\"}\r\nuserName\r\n: \r\n\"jahid_qa_dil_p\"\r\nbookingBranch\r\n: \r\n{name: \"Dilkusha\", code: \"DIL\"}\r\ncode\r\n: \r\n\"DIL\"\r\nname\r\n: \r\n\"Dilkusha\"\r\ncnType\r\n: \r\n{code: \"PSL\"}\r\ncode\r\n: \r\n\"PSL\"\r\ndepartment\r\n: \r\n{name: \"Parcel\"}\r\nname\r\n: \r\n\"Parcel\"\r\ndestinationBranch\r\n: \r\n{code: \"JBR\", nameBn: \"চট্টগ্রাম জুবলীরোড\", name: \"Jubilee Road, CTG\"}\r\ncode\r\n: \r\n\"JBR\"\r\nname\r\n: \r\n\"Jubilee Road, CTG\"\r\nnameBn\r\n: \r\n\"চট্টগ্রাম জুবলীরোড\"\r\ndestinationMainBranch\r\n: \r\n{name: \"Jubilee Road, CTG\", code: \"JBR\"}\r\nisHomeDelivery\r\n: \r\nfalse\r\nitem\r\n: \r\n{name: \"E-Com-Cash\", unit: \"Pcs\", quantity: 1, description: \"GDSRG\"}\r\ndescription\r\n: \r\n\"GDSRG\"\r\nname\r\n: \r\n\"E-Com-Cash\"\r\nquantity\r\n: \r\n1\r\nunit\r\n: \r\n\"Pcs\"\r\nlot\r\n: \r\n{quantity: 1, from: \"70005002343613\", to: \"70005002343613\"}\r\nfrom\r\n: \r\n\"70005002343613\"\r\nquantity\r\n: \r\n1\r\nto\r\n: \r\n\"70005002343613\"\r\nnumber\r\n: \r\n\"70005002343613\"\r\npacketSerial\r\n: \r\n\"3004976111\"\r\nprice\r\n: \r\n{actualAmount: 140, totalDiscount: 30, totalReceiveableAmount: 110, isPaid: true,…}\r\nactualAmount\r\n: \r\n140\r\nconditionAmount\r\n: \r\n5632\r\nisPaid\r\n: \r\ntrue\r\ntotalCharge\r\n: \r\n140\r\ntotalDiscount\r\n: \r\n30\r\ntotalReceiveableAmount\r\n: \r\n110\r\nvdCharge\r\n: \r\n57\r\nprintBy\r\n: \r\n{operator: {userName: \"jahid_qa_dil_p\"}}\r\nprintData\r\n: \r\n{count: 0, message: \"Re-Print 0\"}\r\nreceiver\r\n: \r\n{meta: {firstName: \"HDJD\"}, address: \"JUBILEE ROAD, CTG\", contact: {phone: \"01915864609\"}}\r\naddress\r\n: \r\n\"JUBILEE ROAD, CTG\"\r\ncontact\r\n: \r\n{phone: \"01915864609\"}\r\nmeta\r\n: \r\n{firstName: \"HDJD\"}\r\nreference\r\n: \r\n\"\"\r\nsender\r\n: \r\n{meta: {firstName: \"ZAHID\"}, address: \"DILKUSHA\", contact: {phone: \"01785353053\"}, nid: \"54655/8577\"}\r\naddress\r\n: \r\n\"DILKUSHA\"\r\ncontact\r\n: \r\n{phone: \"01785353053\"}\r\nmeta\r\n: \r\n{firstName: \"ZAHID\"}\r\nfirstName\r\n: \r\n\"ZAHID\"\r\nnid\r\n: \r\n\"54655/8577\"\r\nserviceType\r\n: \r\n{code: \"E-Com\"}\r\ncode\r\n: \r\n\"E-Com\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/sticker",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"sticker"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
