@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "318117ba-7fa5-4549-8554-4a265a610875",
+		"name": "DevConsignmentApiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26316244"
+	},
+	"item": [
+		{
+			"name": "createConsigment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2lsZXJwbGF0ZS5jb20iLCJkYXRhIjp7InVzZXJOYW1lIjoiamFoaWRfcWFfZGlsX3AiLCJkZXZpY2VVdWlkIjoiMThDMDREOUREODNCIiwidXNlclVpZCI6ImphaGlkX3FhX2RpbF9wIiwibmFtZSI6IkphaGlkICIsImNvbXBhbnlOYW1lIjoiIiwidXNlclR5cGUiOiJPUEVSQVRPUiIsInVzZXJSb2xlIjoiT1BFUkFUT1IiLCJsb2dpblR5cGUiOiJVU0VSTkFNRSIsImRlcGFydG1lbnRDb2RlIjoiNzAiLCJicmFuY2hDb2RlIjoiRElMIiwiYnJhbmNoU0wiOiIwMDUiLCJkZXZpY2VQZXJtaXNzaW9uIjoiMTgxQzAxNEQxOUQxRDgxM0IxRGUxZmExdWwxdCAxc3QxcmkxbmcxQVAxUFIxT1YxRUQxIn0sImlhdCI6MTY3OTMwNjk1MywiZXhwIjoxNjg3MDgyOTUzfQ.XKr60CAskkgpfADVz6kn4pGPSzR6ZJSNQcVOknvm_E7BP4e-V3TyuzrpaXQJt3goaPkcGPq5pWprNyK4uHt-L-0wLDvQII6aXsN8xxMa6B45lqn5M9Ox_7O4u1QRwUrdxkSWbWKo0h5eKRzbwiuU6b7y_Vhl9b-nGLMtIaSNXwhm-6t8sQc_dB4Vb_qf5A3Vb0T435yq0kJ4GhPUL0m4-D7jgHjMoiJMAeT_L6UOfal5ma7_VwjCqxV4PTFHDM9dKSydO0aXzJHJCLZld7ACiXnFLvtsnJpjWc5UV0LVD6yPlLMz5pwXt6e1vGpM39jJ_upI4k1vuGRMHtpsL9EnlU9eyncs6Ca2qSOK5I3iuBiDWUCtmNbqxAL8S51P-3TvFlrFWSacsjpDAGPJc7bEPQmh2-Fr0vSm6W7PPIq80R24Qwnv0i4_wahlQssu_anX1KAfhTdhnUWm_3-vHf-Ltn5PCupZwLBm5_SDVRA-EO_h-Fz1YfTKdLzyVsV1LLzepTzjcU_K4E-RfFz6uUt6N7hRIImET18kKYXzVZTd_jkiVjv-IRxvxVyu8thEDMq6JylIyqwTAxoiELNqchnfiRSY54xf3VL6SH1_FSVOc6riuqfRIOWZB_-sW2yhSfq8y-ebf_EcfqtAaSlg4KmMc0locW-LFnUFHe1HXMWETfU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2lsZXJwbGF0ZS5jb20iLCJkYXRhIjp7InVzZXJOYW1lIjoiamFoaWRfcWFfZGlsX3AiLCJkZXZpY2VVdWlkIjoiMThDMDREOUREODNCIiwidXNlclVpZCI6ImphaGlkX3FhX2RpbF9wIiwibmFtZSI6IkphaGlkICIsImNvbXBhbnlOYW1lIjoiIiwidXNlclR5cGUiOiJPUEVSQVRPUiIsInVzZXJSb2xlIjoiT1BFUkFUT1IiLCJsb2dpblR5cGUiOiJVU0VSTkFNRSIsImRlcGFydG1lbnRDb2RlIjoiNzAiLCJicmFuY2hDb2RlIjoiRElMIiwiYnJhbmNoU0wiOiIwMDUiLCJkZXZpY2VQZXJtaXNzaW9uIjoiMTgxQzAxNEQxOUQxRDgxM0IxRGUxZmExdWwxdCAxc3QxcmkxbmcxQVAxUFIxT1YxRUQxIn0sImlhdCI6MTY3OTIyNTEyMiwiZXhwIjoxNjg3MDAxMTIyfQ.cnUt5KV_t1dpN0MYc25eJO_CNp-2EzpJR8Z-vRFJKIkgQJop3P_r6x0qvNR-S7ANJWRb0qcMYy5qB6b1KlMNZM4sgsDhmJ-n7VccNVQuVC5h8CuChIXADCLct3XuVehkN4RhwxFNEczVRucO9Db6HEy6k8tc33dpiFS3S-adyf72jWPQMvRin5soH03wObIG1_Pj9Qw0MAQfdEO7vG2sNiCE1Lx6gY-ONQgiiXMZ39JHAes6Kmw3MiZ4UntQE4Wd-BXy7yAiqBdc_DrGkt8TTvS09hG_SvOXCJYSonZvr8naVyB3JC_AVt-Iv1ZlgZTD0gP53kjqvgIceKWzGxcAvAl7_3cuGaHdTzV7e5OMeWC3SQm14GXnKuXCMBE8XVut8WPfB_XkXYmTPBeZhKMAQAY2y3oUPamy54Sg9TiZhvg7I8oCi2GxQYlel_r-as535m_9xxYQOBPOHbRMJ1aO9TIwz9yvXVII9_jUUkLsNLA_OBZtCLaR7QevJaX3jTqPXAwyM34q5HgC4_8OR6JA9qc6dYLzCBWG032O21G_yoFJN0GBP9DdVrDc9ok_yLgXTWh8k8z2RY_iA6IFBWkzPpjwr3HNr1-xQysAOs7MhQYOks7jNShvzVR-hzSchhVdy1YHb9V3JKWPBJP4_q7mXZOwEqCNGVuky_o6oBXnSrw",
+						"type": "text"
+					},
+					{
+						"key": "macaddress",
+						"value": "18C04D9DD83B",
+						"type": "text"
+					},
+					{
+						"key": "motherboardSerialNumber",
+						"value": "Default string",
+						"type": "text"
+					},
+					{
+						"key": "deviceType",
+						"value": "WEB",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation CreateConsignment($consignment: ConsignmentCreateInput!) {\r\n  createConsignment(consignment: $consignment) {\r\n    message\r\n    result {\r\n      manifestNo\r\n    }\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"consignment\": {\r\n       \"departmentCode\": \"70\",\r\n    \"cnTypeCode\": \"PSL\",\r\n    \"destinationBranchCode\": \"M11\",\r\n    \"fingerPrint\": \"723473f0-cc7a-11ed-87d0-a3d7b4b6c49c\",\r\n    \"isHomeDelivery\": false,\r\n    \"item\": {\r\n      \"description\": \"1 PCS Jacket\",\r\n      \"name\": \"E-Com-Dhaka\",\r\n      \"quantity\": 1,\r\n      \"unit\": \"Pcs\"\r\n    },\r\n    \"manifestNo\": 1234,\r\n    \"packetSerial\": \"3100229919\",\r\n    \"partyCode\": \"70DIL000004\",\r\n    \"price\": {\r\n      \"conditionAmount\": 20,\r\n      \"otherCharge\": 0,\r\n      \"rate\": 90,\r\n      \"rateQuantity\": 1,\r\n      \"serviceCharge\": 0\r\n    },\r\n    \"receiver\": {\r\n      \"address\": \"MOHAMMAD MOINUL ISLAM, C/O:MOHAMMAD MOTIAR RAHAMA, VILLAGE:CHARERBITA, WORDNO:03, P/O:SHAJANPUR, P/S:GOPALPUR, DIST:TANGAIL, DHAKA, BANGLADESH\",\r\n      \"contact\": {\r\n        \"phone\": \"01708368328\"\r\n      },\r\n      \"meta\": {\r\n        \"firstName\": \"SAKIF\"\r\n      },\r\n      \"nid\": \"123456789\",\r\n      \"reference\": \"TEST BOOKING IT\"\r\n    },\r\n    \"reference\": \"TEST BOOKING IT\",\r\n    \"remarks\": \"TEST BOOKING IT\",\r\n    \"sender\": {\r\n      \"address\": \"UTTARA SECTOR-6\",\r\n      \"contact\": {\r\n        \"phone\": \"01722530479\"\r\n      },\r\n      \"meta\": {\r\n        \"firstName\": \"MD. MINUl ISLAM\"\r\n      },\r\n      \"nid\": \"123456789\",\r\n      \"reference\": \"TEST BOOKING IT\"\r\n    },\r\n    \"serviceTypeCode\": \"E-Com-Dhaka\"\r\n  }\r\n    \r\n  }\r\n      \r\n"
+					}
+				},
+				"url": {
+					"raw": "https://api-gateway.sundarbanit.com.bd/graphql",
+					"protocol": "https",
+					"host": [
+						"api-gateway",
+						"sundarbanit",
+						"com",
+						"bd"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getConsigments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2lsZXJwbGF0ZS5jb20iLCJkYXRhIjp7InVzZXJOYW1lIjoiamFoaWRfcWFfZGlsX3AiLCJkZXZpY2VVdWlkIjoiMThDMDREOUREODNCIiwidXNlclVpZCI6ImphaGlkX3FhX2RpbF9wIiwibmFtZSI6IkphaGlkICIsImNvbXBhbnlOYW1lIjoiIiwidXNlclR5cGUiOiJPUEVSQVRPUiIsInVzZXJSb2xlIjoiT1BFUkFUT1IiLCJsb2dpblR5cGUiOiJVU0VSTkFNRSIsImRlcGFydG1lbnRDb2RlIjoiNzAiLCJicmFuY2hDb2RlIjoiRElMIiwiYnJhbmNoU0wiOiIwMDUiLCJkZXZpY2VQZXJtaXNzaW9uIjoiMTgxQzAxNEQxOUQxRDgxM0IxRGUxZmExdWwxdCAxc3QxcmkxbmcxQVAxUFIxT1YxRUQxIn0sImlhdCI6MTY3OTczMjg5MSwiZXhwIjoxNjg3NTA4ODkxfQ.BFLu_d5YCfvAllN-CETvIL-07np6Z4Cmt1blKEnS9K0MKVyYKC4msRYyctAj4Gmc3meEgLlY47SwqBn8hu45n6_Vh0vSA3VuqsolDXmsTzoIhJP4Qhcxih6zefbcyKvOnUqaj62rPeoX7TztXGLBpyT15ZsvhIlnVzxvW2PvjaxvJdwT01mYG_o5_Y6fBW10LYOQvqbpksGofaSEZ7IhyoIw4GpKkkQ7eadgGyovDopHeA3JsYb3AJclw4PfWlzPje3Ykt-zoH_Wy9nWao_AAnCm7X11uUIGAfe44ZYzjsJc7c_R9pRBQaOMKWIswq5E3DBewSzL6Xu4UwaBvgUmrn4AhW2XKCDnPmC2gyv49uj65g3uG9kIPDKhfzJAxM1uUqDw9IypjNEl53vA3jhXUoUihRKD_b0ZWDK9XaZiYyjXMOaMujo984TN8UY2zGTExMb8yYAfGz3QwdqxfEr1z1HTQBqi92f2rLVYTnA3KpjMeNQDcEew4ucgm4u7waA12OemPImnq2kD-mu6NJsWBgAtDnLP_QvuyiUm3E2uuITi1dH6JJEJtjGYr496xQElhqkKYSmkA_KWa7IdLr022aOFQwDjgcyz6oo5DrJjw2z6oIGP8AwPxs6px7Hp2SdQaw-irujhHbXuAm8X7x0rZeWs4ZZng7eZn_KsuoUpXqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2lsZXJwbGF0ZS5jb20iLCJkYXRhIjp7InVzZXJOYW1lIjoiamFoaWRfcWFfZGlsX3AiLCJkZXZpY2VVdWlkIjoiMThDMDREOUREODNCIiwidXNlclVpZCI6ImphaGlkX3FhX2RpbF9wIiwibmFtZSI6IkphaGlkICIsImNvbXBhbnlOYW1lIjoiIiwidXNlclR5cGUiOiJPUEVSQVRPUiIsInVzZXJSb2xlIjoiT1BFUkFUT1IiLCJsb2dpblR5cGUiOiJVU0VSTkFNRSIsImRlcGFydG1lbnRDb2RlIjoiNzAiLCJicmFuY2hDb2RlIjoiRElMIiwiYnJhbmNoU0wiOiIwMDUiLCJkZXZpY2VQZXJtaXNzaW9uIjoiMTgxQzAxNEQxOUQxRDgxM0IxRGUxZmExdWwxdCAxc3QxcmkxbmcxQVAxUFIxT1YxRUQxIn0sImlhdCI6MTY3OTczMjg5MSwiZXhwIjoxNjg3NTA4ODkxfQ.BFLu_d5YCfvAllN-CETvIL-07np6Z4Cmt1blKEnS9K0MKVyYKC4msRYyctAj4Gmc3meEgLlY47SwqBn8hu45n6_Vh0vSA3VuqsolDXmsTzoIhJP4Qhcxih6zefbcyKvOnUqaj62rPeoX7TztXGLBpyT15ZsvhIlnVzxvW2PvjaxvJdwT01mYG_o5_Y6fBW10LYOQvqbpksGofaSEZ7IhyoIw4GpKkkQ7eadgGyovDopHeA3JsYb3AJclw4PfWlzPje3Ykt-zoH_Wy9nWao_AAnCm7X11uUIGAfe44ZYzjsJc7c_R9pRBQaOMKWIswq5E3DBewSzL6Xu4UwaBvgUmrn4AhW2XKCDnPmC2gyv49uj65g3uG9kIPDKhfzJAxM1uUqDw9IypjNEl53vA3jhXUoUihRKD_b0ZWDK9XaZiYyjXMOaMujo984TN8UY2zGTExMb8yYAfGz3QwdqxfEr1z1HTQBqi92f2rLVYTnA3KpjMeNQDcEew4ucgm4u7waA12OemPImnq2kD-mu6NJsWBgAtDnLP_QvuyiUm3E2uuITi1dH6JJEJtjGYr496xQElhqkKYSmkA_KWa7IdLr022aOFQwDjgcyz6oo5DrJjw2z6oIGP8AwPxs6px7Hp2SdQaw-irujhHbXuAm8X7x0rZeWs4ZZng7eZn_KsuoUpXqw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query GetConsignments($filter: ConsignmentFilterInput) {\r\n  getConsignments(filter: $filter) {\r\n    message\r\n    result {\r\n      consignments {\r\n        bookingSource\r\n        createdAt\r\n        fingerPrint\r\n        isHomeDelivery\r\n        manifestNo\r\n        number\r\n        reference\r\n        remarks\r\n        status\r\n        syncStatus\r\n        uid\r\n        updatedAt\r\n      }\r\n      count\r\n    }\r\n    statusCode\r\n  }\r\n}",
+						"variables": "{\r\n  \"filter\": {\r\n    \"bookedBy\": \"sumon_uts_p\",\r\n    \"number\": \"70815000125104\",\r\n    \"packetSerial\": \"3100180449\",\r\n    \"uid\": \"CN-6SCGGZ9G\"\r\n  }\r\n}"
+					}
+				},
+				"url": {
+					"raw": "https://api-gateway.sundarbanit.com.bd/graphql",
+					"protocol": "https",
+					"host": [
+						"api-gateway",
+						"sundarbanit",
+						"com",
+						"bd"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
